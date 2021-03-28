@@ -19,6 +19,20 @@ body {
   background-color: #361d5a;
 }
 
+input, textarea{
+    font-family: "gilroy";
+    font-weight: 100;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    resize: none;
+    border-radius: 5px;
+}
+input::placeholder, textarea::placeholder{
+    color: black;
+}
+
 header {
   display: flex;
   height: 100px;
@@ -156,6 +170,43 @@ section {
     font-size: 18px;
 }
 
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact form h1 {
+    font-family: "gilroy";
+    font-weight: 800;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+}
+
+#contact form button {
+    align-self: center;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #190e2a;
+    padding: 15px 30px;
+    color: white;
+    font-family: "gilroy";
+    font-weight: 100;
+    font-size: 15px;
+}
+
+#contact form * {
+    margin: 12px 12px;
+}
+
 footer {
     display: flex;
     align-items: center;
@@ -199,19 +250,14 @@ footer .info .contact h1 {
     font-size: 18px;
 }
 
-footer .links{
-    position: absolute;
-    bottom: -10px;
-}
-
 footer .links a{
     text-decoration: none;
+    margin: 5px;
 }
 
 footer .links svg{
     fill: white;
     width: 20px;
-    margin: 10px 5px;
     transition: fil 0.4s;
 }
 

@@ -28,11 +28,14 @@
         </div>
     </header>
     <main>
-        <section>
-
-        </section>
-        <section>
-
+        <section id="contact">
+            <form>
+                <h1>Contato</h1>
+                <input name="name" id="name" placeholder="Nome" type="text" required/>
+                <input name="email" id="email" placeholder="Email" type="email" required/>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                <button onsubmit="enviarEmail(event)">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>
@@ -57,5 +60,11 @@
             <a href="https://www.facebook.com/profile.php?id=100011547969144" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg></a>
         </div>
     </footer>
+    <script>
+        function enviarEmail(event){
+            event.preventDefault(event);
+               
+        }
+    </script>
 </body>
 </html>
