@@ -89,3 +89,8 @@ section{
     padding: 0 100px;
     position: relative;
 }
+section#tela_primaria h1{
+    font-family: "gilroy";
+    font-size: 800;
+    text-transform: uppercase;
+}
